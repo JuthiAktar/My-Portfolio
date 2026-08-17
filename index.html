@@ -1,233 +1,179 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juthi Khatun | Professional Front-End Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- FontAwesome Icons -->
+  <title>NEXUS AI — Next-Gen Intelligence Engine</title>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Navigation -->
-  <header>
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    <p><i class="fa-solid fa-sparkles"></i> Introducing Nexus Engine 4.0 — 10x Faster AI Processing. <a href="#demo">Try Live Demo →</a></p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
     <nav class="navbar">
-      <a href="#" class="logo">Juthi<span>.dev</span></a>
+      <a href="#home" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-brain"></i></div>
+        NEXUS<span>.AI</span>
+      </a>
+
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#features">Capabilities</a></li>
+        <li><a href="#demo">AI Sandbox</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#stats">Impact</a></li>
       </ul>
-      <div class="menu-icon" id="menuBtn">
-        <i class="fa-solid fa-bars"></i>
+
+      <div class="nav-right">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#pricing" class="btn btn-primary">Get API Key</a>
+        <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
       </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <span class="badge">Welcome to my Portfolio</span>
-        <h1>Hi, I'm <span class="highlight">Juthi Khatun</span></h1>
-        <h2>Creative <span class="typing-text">Front-End Developer</span></h2>
-        <p>I build modern, high-performance, and fully responsive web applications with clean code and exceptional user experience.</p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn btn-primary">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+    <div class="hero-badge"><i class="fa-solid fa-microchip"></i> Enterprise Autonomous Intelligence</div>
+    <h1>Empowering Scale With Artificial Brains</h1>
+    <p>Automate complex workflows, generate high-converting content, and analyze petabytes of real-time data using custom Neural Models.</p>
+
+    <div class="hero-btns">
+      <a href="#demo" class="btn btn-primary btn-lg"><i class="fa-solid fa-rocket"></i> Launch Neural Engine</a>
+      <a href="#features" class="btn btn-secondary btn-lg"><i class="fa-solid fa-book-open"></i> Read Architecture</a>
+    </div>
+
+    <!-- Live Interactive AI Sandbox Demo -->
+    <div id="demo" class="ai-demo-card">
+      <div class="demo-header">
+        <div class="dots"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+        <div class="demo-title">Nexus Neural Terminal v4.0</div>
+      </div>
+      <div class="demo-body">
+        <div class="terminal-input">
+          <input type="text" id="aiPrompt" placeholder="Ask Nexus AI to generate code, summarize text, or analyze data..." />
+          <button id="runAiBtn" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
-        <div class="social-links">
-          <a href="https://github.com/JuthiAktar" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <div class="terminal-output" id="aiOutput">
+          <p class="system-msg">> Terminal initialized. System running at 99.9% efficiency. Enter prompt above...</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">About <span>Me</span></h2>
-      <div class="about-grid">
-        <div class="about-box">
-          <i class="fa-solid fa-code"></i>
-          <h3>Clean Code</h3>
-          <p>I write well-structured, maintainable, and efficient HTML, CSS, and JavaScript code.</p>
-        </div>
-        <div class="about-box">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <h3>Fully Responsive</h3>
-          <p>Ensuring websites look perfect on all screen sizes, from mobile devices to desktop displays.</p>
-        </div>
-        <div class="about-box">
-          <i class="fa-solid fa-rocket"></i>
-          <h3>Fast Deployment</h3>
-          <p>Experienced with Git, GitHub, and cloud platforms like Netlify for continuous integration.</p>
-        </div>
+  <!-- Key Metrics -->
+  <section id="stats" class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>10M+</h3>
+        <p>API Requests Daily</p>
+      </div>
+      <div class="stat-card">
+        <h3>&lt; 15ms</h3>
+        <p>Average Latency</p>
+      </div>
+      <div class="stat-card">
+        <h3>99.99%</h3>
+        <p>Uptime SLA Guarantee</p>
+      </div>
+      <div class="stat-card">
+        <h3>140+</h3>
+        <p>Global Datacenters</p>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2 class="section-title">Technical <span>Skills</span></h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fa-brands fa-html5 html-icon"></i>
-          <h3>HTML5</h3>
-          <p>Semantic markup, Accessibility, Forms</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-brands fa-css3-alt css-icon"></i>
-          <h3>CSS3</h3>
-          <p>Flexbox, CSS Grid, Animations, Media Queries</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-brands fa-js js-icon"></i>
-          <h3>JavaScript</h3>
-          <p>DOM Manipulation, ES6+, Async/Await</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-brands fa-git-alt git-icon"></i>
-          <h3>Git & GitHub</h3>
-          <p>Version Control, Branching, Repositories</p>
-        </div>
+  <!-- Features Grid -->
+  <section id="features" class="features-section">
+    <div class="section-header">
+      <span class="sub-heading">Unmatched Architecture</span>
+      <h2>Engineered For Maximum Throughput</h2>
+    </div>
 
-        <div class="skill-card">
-         <i class="fa-solid fa-c"></i>
-         <h3>C Language</h3>
-         <p>Pointers, Structure, Problem Solving</p>
-        </div>
-
-        <div class="skill-card">
-         <i class="fa-solid fa-code"></i>
-         <h3>C++</h3>
-         <p>OOP, STL, Data Structures</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-solid fa-cloud-arrow-up netlify-icon"></i>
-          <h3>Deployment</h3>
-          <p>Netlify, Vercel, Live hosting</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-solid fa-laptop-code responsive-icon"></i>
-          <h3>Responsive Layouts</h3>
-          <p>Mobile-first Design, Cross-browser compatibility</p>
-        </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Neural Pipeline Integration</h3>
+        <p>Connect your existing database to our low-latency vector index in less than 5 minutes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Zero-Trust Data Security</h3>
+        <p>End-to-end AES-256 encryption ensures your proprietary enterprise data never leaks into open training sets.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Predictive Analytics</h3>
+        <p>Forecast market trends and customer behavior using deep temporal learning algorithms.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="section-title">Featured <span>Projects</span></h2>
-      <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-content">
-            <span class="project-tag">Web Application</span>
-            <h3>Rasna Vilas</h3>
-            <p>A modern, full-featured restaurant web application with interactive menu categories and elegant styling.</p>
-            <div class="tech-stack">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>Responsive</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/JuthiAktar/rasna-vilas" target="_blank" class="project-btn"><i class="fa-brands fa-github"></i> Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-content">
-            <span class="project-tag">UI/UX Showcase</span>
-            <h3>Car Rental Platform</h3>
-            <p>An interactive vehicle showcase site with a modern dark UI and responsive grid structure.</p>
-            <div class="tech-stack">
-              <span>HTML5</span>
-              <span>Flexbox</span>
-              <span>CSS Grid</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/JuthiAktar/car-website" target="_blank" class="project-btn"><i class="fa-brands fa-github"></i> Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-content">
-            <span class="project-tag">Portfolio Template</span>
-            <h3>Interactive Portfolio</h3>
-            <p>Personal developer showcase with navigation transitions and modern card layouts.</p>
-            <div class="tech-stack">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/JuthiAktar/Juthi-Aktar---Portfolio" target="_blank" class="project-btn"><i class="fa-brands fa-github"></i> Source Code</a>
-            </div>
-          </div>
-        </div>
-
+  <!-- Dynamic Pricing -->
+  <section id="pricing" class="pricing-section">
+    <div class="section-header">
+      <span class="sub-heading">Transparent Pricing</span>
+      <h2>Scale Seamlessly as You Grow</h2>
+      <div class="pricing-toggle">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="pricingSwitch">
+          <span class="slider round"></span>
+        </label>
+        <span>Yearly <span class="discount-badge">Save 20%</span></span>
       </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Get In <span>Touch</span></h2>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h3>Let's work together!</h3>
-          <p>I am currently open to junior front-end developer roles, freelance work, and collaboration on web projects.</p>
-          <div class="info-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>juthi10203@gmail.com</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <h4>Location</h4>
-              <p>Bangladesh</p>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" onsubmit="event.preventDefault();">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <input type="text" placeholder="Subject" required>
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-        </form>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price"><span class="currency">$</span><span class="amount" data-monthly="29" data-yearly="23">29</span><span class="period">/mo</span></div>
+        <p>Ideal for solo developers and quick prototyping.</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> 100,000 API Tokens</li>
+          <li><i class="fa-solid fa-check"></i> Standard Latency</li>
+          <li><i class="fa-solid fa-check"></i> Community Support</li>
+        </ul>
+        <button class="btn btn-secondary full-width">Get Started</button>
+      </div>
+
+      <div class="price-card featured">
+        <span class="popular-tag">Most Popular</span>
+        <h3>Pro Developer</h3>
+        <div class="price"><span class="currency">$</span><span class="amount" data-monthly="89" data-yearly="71">89</span><span class="period">/mo</span></div>
+        <p>Built for scaling startups and fast-moving tech teams.</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> 2,500,000 API Tokens</li>
+          <li><i class="fa-solid fa-check"></i> Ultra-low Latency Dedicated Nodes</li>
+          <li><i class="fa-solid fa-check"></i> 24/7 Priority SLA Support</li>
+        </ul>
+        <button class="btn btn-primary full-width">Start Free Trial</button>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container footer-container">
-      <p>&copy; 2026 Juthi Khatun. All Rights Reserved.</p>
-      <p>Built with HTML, CSS & JavaScript</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><div class="logo-icon"><i class="fa-solid fa-brain"></i></div> NEXUS<span>.AI</span></a>
+        <p>Next-generation autonomous intelligence infrastructure built for enterprise scale.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 NEXUS AI Systems Inc. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html>
+</html
